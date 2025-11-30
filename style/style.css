@@ -1,0 +1,591 @@
+.riwayat-pendampingan {
+  background-color: #ffffff;
+  width: 720px;
+  min-height: 1280px;
+  position: relative;
+}
+
+.riwayat-pendampingan .rectangle {
+  top: 121px;
+  width: 720px;
+  height: 378px;
+  background-color: #58baab;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.riwayat-pendampingan .search-user {
+  position: absolute;
+  top: 141px;
+  left: 20px;
+  width: 621px;
+  height: 190px;
+}
+
+.riwayat-pendampingan .search-tag {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 405px;
+  height: 67px;
+}
+
+.riwayat-pendampingan .div {
+  top: 0;
+  width: 403px;
+  height: 67px;
+  background-color: #f9f9f9;
+  border-radius: 35px;
+  position: absolute;
+  left: 0;
+}
+
+.riwayat-pendampingan .group {
+  position: absolute;
+  width: 6.45%;
+  top: 20px;
+  left: 85.72%;
+  height: 26px;
+}
+
+.riwayat-pendampingan .vector {
+  position: absolute;
+  width: 87.50%;
+  top: -1px;
+  left: -3.83%;
+  height: 25px;
+}
+
+.riwayat-pendampingan .img {
+  position: absolute;
+  width: 75.00%;
+  top: 6px;
+  left: 21.17%;
+  height: 22px;
+}
+
+.riwayat-pendampingan .text-wrapper {
+  position: absolute;
+  top: 17px;
+  left: 32px;
+  width: 110px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #818181;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .drop-type {
+  top: 50px;
+  left: 417px;
+  width: 238px;
+  position: absolute;
+  height: 67px;
+}
+
+.riwayat-pendampingan .rectangle-2 {
+  top: 0;
+  width: 236px;
+  height: 67px;
+  background-color: #f9f9f9;
+  border-radius: 35px;
+  position: absolute;
+  left: 0;
+}
+
+.riwayat-pendampingan .text-wrapper-2 {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 140px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #58baab;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .drop-year {
+  top: 123px;
+  left: 417px;
+  width: 238px;
+  position: absolute;
+  height: 67px;
+}
+
+.riwayat-pendampingan .vector-2 {
+  position: absolute;
+  width: 9.54%;
+  top: 29px;
+  left: 82.08%;
+  height: 13px;
+  aspect-ratio: 2;
+}
+
+.riwayat-pendampingan .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #818181;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .drop-faculty {
+  top: 123px;
+  left: 0;
+  width: 405px;
+  position: absolute;
+  height: 67px;
+}
+
+.riwayat-pendampingan .vector-3 {
+  position: absolute;
+  width: 6.56%;
+  top: 29px;
+  left: 86.22%;
+  height: 15px;
+  aspect-ratio: 2;
+}
+
+.riwayat-pendampingan .text-wrapper-4 {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 293px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #818181;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .text-wrapper-5 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 238px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #444444;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .vector-4 {
+  position: absolute;
+  width: 3.69%;
+  top: 236px;
+  left: 88.19%;
+  height: 15px;
+  aspect-ratio: 2;
+}
+
+.riwayat-pendampingan .group-2 {
+  position: absolute;
+  top: 1175px;
+  left: 533px;
+  width: 157px;
+  height: 67px;
+  cursor: pointer;
+}
+
+.riwayat-pendampingan .rectangle-3 {
+  top: 0;
+  width: 155px;
+  height: 67px;
+  background-color: #58baab;
+  border-radius: 9px;
+  position: absolute;
+  left: 0;
+}
+
+.riwayat-pendampingan .text-wrapper-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 155px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .current-activities {
+  position: absolute;
+  top: 398px;
+  left: 35px;
+  width: 663px;
+  height: 773px;
+}
+
+.riwayat-pendampingan .rectangle-4 {
+  top: 398px;
+  width: 720px;
+  height: 692px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+}
+
+.riwayat-pendampingan .mask-group {
+  position: absolute;
+  top: 81px;
+  left: 0;
+  width: 661px;
+  height: 692px;
+}
+
+.riwayat-pendampingan .rectangle-5 {
+  top: 398px;
+  width: 720px;
+  height: 692px;
+  background-color: #d9d9d903;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 8px #0000000f;
+  position: absolute;
+  left: 0;
+}
+
+.riwayat-pendampingan .text-wrapper-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 389px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #444444;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .accessibility-icon {
+  position: absolute;
+  top: 1169px;
+  left: 35px;
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1;
+}
+
+.riwayat-pendampingan .group-3 {
+  position: absolute;
+  top: 1176px;
+  left: 360px;
+  width: 157px;
+  height: 67px;
+}
+
+.riwayat-pendampingan .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 720px;
+  height: 121px;
+  z-index: 10;
+}
+
+.riwayat-pendampingan .navbar-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+}
+
+.riwayat-pendampingan .group-4 {
+  position: absolute;
+  width: 4.86%;
+  height: 33.06%;
+  top: 32.23%;
+  left: 80.00%;
+  display: flex;
+}
+
+.riwayat-pendampingan .vector-5 {
+  flex: 1;
+  width: 35px;
+}
+
+.riwayat-pendampingan .group-5 {
+  position: absolute;
+  width: 5.56%;
+  top: calc(50.00% - 14px);
+  left: 89.44%;
+  height: 27px;
+  aspect-ratio: 1.48;
+  background-image: url(./img/vector-5.svg);
+  background-size: 100% 100%;
+}
+
+.riwayat-pendampingan .INCARE {
+  position: absolute;
+  top: 27px;
+  left: 52px;
+  width: 277px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.riwayat-pendampingan .span {
+  color: #58baab;
+}
+
+.riwayat-pendampingan .text-wrapper-8 {
+  color: #818181;
+}
+
+.group-4 .ExtMenu {
+  margin-left: 20px;
+}
+
+/* Styles for functional search elements */
+.riwayat-pendampingan .search-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 35px;
+  padding: 0 32px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #818181;
+  font-size: 20px;
+  outline: none;
+}
+
+.riwayat-pendampingan .dropdown-select,
+.riwayat-pendampingan .date-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 35px;
+  padding: 0 32px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #818181;
+  font-size: 20px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.riwayat-pendampingan .dropdown-select {
+  background-image: url('assest/Down.png');
+  background-repeat: no-repeat;
+  background-position: right 32px center;
+  background-size: 15px;
+}
+
+.riwayat-pendampingan .date-input {
+  color: #58baab;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container untuk banyak card */
+.activity-list {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
+}
+
+/* Card utama */
+.activity-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+/* Bagian kiri */
+.left-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Kotak icon huruf */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background: #66c2b5;
+    border-radius: 15px;
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tulisan-tulisan */
+.text-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.category {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.mentor {
+    background: #58baab;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    width: fit-content;
+    color: white;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.stars {
+    color: #ffc24b;
+    font-size: 18px;
+}
+
+.score {
+    font-size: 15px;
+    color: #444;
+}
+
+/* Bagian kanan */
+.right-section {
+    text-align: right;
+}
+
+.date {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Tombol */
+.btn {
+    background: #c2f5e9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #b4ecde;
+}
+/* Background kotak */
+.rectangle-4,
+.rectangle-5 {
+    position: relative;
+    z-index: 1;   /* background layer */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #444444;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #58baab;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
