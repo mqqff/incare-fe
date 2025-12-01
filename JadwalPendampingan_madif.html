@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pendampingan Volunteer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F4FFFF;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 1280px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #F9F9F9;
+            height: 121px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 52px 0 52px;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: 700;
+            color: #58BAAB;
+        }
+
+        .logo span:first-child {
+            color: #58BAAB;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* Header Section */
+        .header-section {
+            background: linear-gradient(180deg, #57BAAB 0%, #57BAAB 100%);
+            height: 371px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .date-display {
+            color: white;
+            text-align: center;
+        }
+
+        .day {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .date-number {
+            font-size: 132px;
+            font-weight: 700;
+            line-height: 1;
+            color: white;
+        }
+
+        .nav-arrow {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Calendar Bar */
+        .calendar-bar {
+            background-color: #2EAE9A;
+            height: 103px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px 19px;
+            gap: 144px;
+        }
+
+        .month-text {
+            color: white;
+            font-size: 37px;
+            font-weight: 400;
+            flex: 1;
+            text-align: center;
+        }
+
+        .calendar-icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Schedule Cards */
+        .schedule-list {
+            padding: 52px 38px;
+            position: relative;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 51px;
+            top: 595px;
+            bottom: 0;
+            width: 3px;
+            background-color: #CBD3D5;
+        }
+
+        .schedule-card {
+            background: white;
+            border-radius: 20px;
+            margin-left: 39px;
+            padding: 23px 29px;
+            margin-bottom: 45px;
+            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+            position: relative;
+            min-height: 168px;
+        }
+
+        .schedule-card.cancelled {
+            background-color: #D6D6D6;
+        }
+
+        .cancelled-badge {
+            background-color: #FF1C1C;
+            color: white;
+            text-align: center;
+            width: 65px;
+            padding-top: 1.5px;
+            font-weight: 400;
+            padding-bottom: 1.5px;
+            border-radius: 10px;
+            font-size: 8px;
+        }
+
+        .time-dot {
+            position: absolute;
+            left: -39px;
+            top: 42%;
+            width: 28px;
+            height: 28px;
+            background-color: #FF9081;
+            border-radius: 50%;
+            border: 4px solid #FFDFDB;
+        }
+
+        .time-dot::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 13px;
+            height: 13px;
+            background-color: #FF9081;
+            border-radius: 50%;
+        }
+
+        .schedule-time {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .schedule-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: #525252;
+        }
+
+        .info-icon {
+            width: 25px;
+            height: 25px;
+            flex-shrink: 0;
+        }
+
+        .schedule-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: #525252;
+        }
+
+        .cancel-btn {
+            position: absolute;
+            top: 13px;
+            right: 14px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .note-text {
+            font-size: 15px;
+            color: #525252;
+            margin-top: 12px;
+            padding-left: 37px;
+        }
+
+        /* Accessibility Icon */
+        .accessibility-icon {
+            position: absolute;
+            left: 75px;
+            bottom: 102px;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Back Button */
+        .back-btn {
+            position: absolute;
+            bottom: 22px;
+            right: 38px;
+            background-color: #58BAAB;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 20px 0;
+            width: 155px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .back-btn:hover {
+            background-color: #4aa899;
+        }
+
+        /* SVG Icons */
+        .svg-icon {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div style="background: #57BAAB;">
+            <nav class="navbar"
+                style="border-end-start-radius: 35px; border-end-end-radius: 35px; background-color:white;">
+                <div class="logo">
+                    <span style="color: #58BAAB;">IN</span><span style="color: #828282;">CARE</span>
+                </div>
+                <div class="nav-icons">
+                    <button class="icon-btn">
+                        <svg width="35" height="40" viewBox="0 0 35 40" fill="none">
+                            <path
+                                d="M29.6738 13.1951C29.4364 10.5237 28.2517 8.01118 26.3175 6.07628C24.3832 4.14137 21.8161 2.90102 19.0441 2.56198V1.48148C19.0441 1.08857 18.8814 0.711747 18.5919 0.433916C18.3023 0.156084 17.9095 0 17.5 0C17.0905 0 16.6977 0.156084 16.4081 0.433916C16.1186 0.711747 15.9559 1.08857 15.9559 1.48148V2.56198C13.1836 2.90109 10.6163 4.14174 8.68194 6.07704C6.74761 8.01235 5.56319 10.5253 5.32618 13.197L4.80735 17.2109L4.80529 17.2306C4.60926 19.4679 3.55682 21.5564 1.85088 23.0933L1.83029 23.1131C1.33412 23.5575 0.794706 24.0415 0.450883 25.0074C0.133824 25.9022 0 27.1625 0 29.1654C0 29.843 0.127647 30.4573 0.448823 30.9728C0.780294 31.5062 1.25794 31.84 1.77265 32.0494C2.26676 32.2489 2.81235 32.3457 3.33118 32.4089C3.67912 32.4504 4.06618 32.482 4.45324 32.5136L4.98647 32.559C7.85235 32.8178 12.1182 33.0864 17.5 33.0864C21.856 33.0962 26.2099 32.9051 30.5468 32.5136C30.9338 32.482 31.3229 32.4504 31.6688 32.4089C32.1876 32.3457 32.7332 32.2509 33.2274 32.0494C33.7786 31.8377 34.2432 31.4599 34.5512 30.9728C34.8724 30.4573 35 29.843 35 29.1654C35 27.1625 34.8662 25.9022 34.5471 25.0074C34.2053 24.0415 33.6659 23.5575 33.1718 23.1111L33.1512 23.0933C31.4445 21.5567 30.3913 19.4682 30.1947 17.2306V17.2109L29.6738 13.1951ZM17.5 4.44444C20.048 4.44441 22.503 5.36312 24.3781 7.01837C26.2532 8.67362 27.4115 10.9445 27.6232 13.3807V13.4005L28.1441 17.4143C28.3869 20.1323 29.6678 22.6684 31.7409 24.5353C32.2144 24.96 32.4265 25.1595 32.5994 25.6435C32.7991 26.2104 32.9412 27.1881 32.9412 29.1654C32.9412 29.6198 32.8547 29.8469 32.7847 29.9595C32.7229 30.0583 32.6262 30.1472 32.4224 30.2301C32.1959 30.323 31.8747 30.3921 31.4135 30.4474C31.1047 30.4869 30.7856 30.5126 30.4253 30.5422L29.82 30.5936C25.7238 30.9476 21.6128 31.1203 17.5 31.1111C12.1882 31.1111 7.98823 30.8464 5.18 30.5936L4.57471 30.5422C4.24476 30.5167 3.9153 30.4858 3.58647 30.4494C3.24202 30.4179 2.90307 30.3449 2.57765 30.2321C2.37176 30.1472 2.27706 30.0583 2.21529 29.9595C2.14529 29.8469 2.05882 29.6198 2.05882 29.1654C2.05882 27.1881 2.20088 26.2084 2.40059 25.6435C2.57353 25.1595 2.78559 24.96 3.25912 24.5353C5.3322 22.6684 6.61315 20.1323 6.85588 17.4143L7.37471 13.4005L7.37677 13.3807C7.5885 10.9445 8.74677 8.67362 10.6219 7.01837C12.497 5.36312 14.952 4.44441 17.5 4.44444ZM8.35882 34.1728C8.29184 33.9244 8.12671 33.7108 7.8984 33.5771C7.67009 33.4435 7.39653 33.4003 7.13564 33.4568C6.87475 33.5133 6.64701 33.6649 6.50064 33.8797C6.35428 34.0945 6.30078 34.3555 6.35147 34.6074C6.6214 35.756 7.19258 36.8194 8.01088 37.6968C8.68696 38.4216 9.51485 39.0014 10.4405 39.3983C11.3661 39.7952 12.3685 40.0002 13.3824 40C14.3962 40.0002 15.3987 39.7952 16.3243 39.3983C17.2499 39.0014 18.0777 38.4216 18.7538 37.6968C18.9362 37.5016 19.0303 37.245 19.0154 36.9833C19.0006 36.7215 18.878 36.4762 18.6746 36.3012C18.4712 36.1263 18.2036 36.036 17.9309 36.0502C17.6581 36.0645 17.4024 36.1821 17.22 36.3773C16.7372 36.8955 16.1458 37.3102 15.4845 37.5941C14.8232 37.878 14.1068 38.0247 13.3824 38.0247C12.3733 38.0278 11.3857 37.7451 10.5434 37.2121C9.70101 36.679 9.04136 35.9193 8.64706 35.0281C8.52408 34.752 8.4276 34.4658 8.35882 34.1728Z"
+                                fill="#828282" />
+                        </svg>
+                    </button>
+                    <button class="icon-btn">
+                        <svg width="40" height="27" viewBox="0 0 40 27" fill="none">
+                            <path
+                                d="M1.25002 27C0.895016 27 0.59835 26.8762 0.360017 26.6285C0.121684 26.3809 0.00168379 26.076 1.71233e-05 25.7139C-0.00164954 25.3518 0.118351 25.0478 0.360017 24.8019C0.601683 24.5559 0.89835 24.4338 1.25002 24.4355H38.75C39.105 24.4355 39.4017 24.5585 39.64 24.8044C39.88 25.0504 40 25.3553 40 25.719C40 26.0828 39.88 26.3868 39.64 26.6311C39.4 26.8753 39.1033 26.9974 38.75 26.9974L1.25002 27ZM1.25002 14.7797C0.895016 14.7797 0.59835 14.6567 0.360017 14.4108C0.121684 14.1648 0.00168379 13.8599 1.71233e-05 13.4962C-0.00164954 13.1324 0.118351 12.8284 0.360017 12.5841C0.601683 12.3399 0.89835 12.2178 1.25002 12.2178H38.75C39.105 12.2178 39.4017 12.3407 39.64 12.5867C39.8783 12.8326 39.9983 13.1375 40 13.5013C40.0017 13.8651 39.8817 14.1691 39.64 14.4133C39.3983 14.6576 39.1017 14.7797 38.75 14.7797H1.25002ZM1.25002 2.55935C0.895016 2.55935 0.59835 2.43723 0.360017 2.193C0.120017 1.94705 1.71233e-05 1.64219 1.71233e-05 1.27839C1.71233e-05 0.914603 0.120017 0.610059 0.360017 0.366354C0.600017 0.122118 0.896683 0 1.25002 0H38.75C39.105 0 39.4017 0.122972 39.64 0.368916C39.8783 0.614859 39.9983 0.918019 40 1.27839C40.0017 1.63877 39.8817 1.94278 39.64 2.19044C39.3983 2.43809 39.1017 2.56106 38.75 2.55935H1.25002Z"
+                                fill="#828282" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Header Date Section -->
+        <div class="header-section">
+            <div class="date-display">
+                <div class="day" style="margin-bottom: 20px;">Tuesday</div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 217px;">
+                <div>
+                    <button class="nav-arrow">
+                        <svg width="88" height="88" viewBox="0 0 88 88" fill="none">
+                            <path d="M53.1667 23.8335L34.8334 42.1668L53.1667 60.5001" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="date-number">21</div>
+
+                <div>
+                    <button class="nav-arrow">
+                        <svg width="88" height="88" viewBox="0 0 88 88" fill="none">
+                            <path d="M36.6667 62.3333L55 44L36.6667 25.6666" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar Bar -->
+        <div class="calendar-bar" style="background-color: #2EAE9B;">
+            <div style="width: 60px;"></div>
+            <div class="month-text">OCTOBER 2025</div>
+            <img src="./assest/calendar.png" width="40">
+        </div>
+
+        <!-- Timeline Line -->
+        <div class="timeline-line"></div>
+
+        <!-- Schedule List -->
+        <div class="schedule-list">
+            <!-- Schedule Card 1 - Cancelled -->
+            <div class="schedule-card cancelled">
+                <div class="time-dot"></div>
+
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 25px;">
+                    <div class="schedule-time">08:45 AM</div>
+                    <div class="cancelled-badge">Cancelled</div>
+                </div>
+
+
+                <div class="schedule-details">
+                    <div class="detail-item">
+                        <img src="./assest/location.png" width="25">
+                        <span>FILKOM Ruang G1.6</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <img src="./assest/clock.png" width="23">
+                        <span>08:45 PM - 10:30 PM</span>
+                    </div>
+                </div>
+
+                <div class="schedule-details">
+                    <div class="detail-item" style="margin-left: 4px;">
+                        <img src="./assest/user.png" width="23">
+                        <span>Andi Sutarno</span>
+                    </div>
+                </div>
+
+                <button class="cancel-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M0.9375 15.0775L15.0815 0.9375M0.9375 0.9375L15.0815 15.0775" stroke="#F56D6D"
+                            stroke-width="1.875" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Schedule Card 2 -->
+            <div class="schedule-card">
+                <div class="time-dot"></div>
+
+                <div class="schedule-time" style="margin-bottom: 25px;">12:30 PM</div>
+
+                <div class="schedule-details">
+                    <div class="detail-item">
+                        <img src="./assest/location.png" width="25">
+                        <span>FILKOM Ruang F4.4</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <img src="./assest/clock.png" width="23">
+                        <span>12:30 PM - 14:10 PM</span>
+                    </div>
+                </div>
+
+                <div class="schedule-details">
+                    <div class="detail-item" style="margin-left: 4px;">
+                        <img src="./assest/user.png" width="23">
+                        <span>Budiman Santoso</span>
+                    </div>
+                </div>
+
+                <button class="cancel-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M0.9375 15.0775L15.0815 0.9375M0.9375 0.9375L15.0815 15.0775" stroke="#F56D6D"
+                            stroke-width="1.875" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Schedule Card 3 -->
+            <div class="schedule-card">
+                <div class="time-dot"></div>
+
+                <div class="schedule-time" style="margin-bottom: 25px;">15:20 PM</div>
+
+                <div class="schedule-details">
+                    <div class="detail-item">
+                        <img src="./assest/location.png" width="25">
+                        <span>FILKOM Ruang F3.7</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <img src="./assest/clock.png" width="23">
+                        <span>15:20 PM - 17:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="schedule-details">
+                    <div class="detail-item" style="margin-left: 4px;">
+                        <img src="./assest/user.png" width="23">
+                        <span>Agus Susilo</span>
+                    </div>
+                </div>
+
+                <button class="cancel-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M0.9375 15.0775L15.0815 0.9375M0.9375 0.9375L15.0815 15.0775" stroke="#F56D6D"
+                            stroke-width="1.875" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding-bottom: 30px;">
+            <div style="cursor: pointer;">
+                <img src="./assest/Accessibility Icon.png" width="60px" style="margin-left: 75px;">
+            </div>
+            <div style="margin-right: 40px;">
+                <button
+                    style="cursor: pointer; background-color: #58BAAB; width: 155px; height: 60px; font-size: 20px; font-family: 'Poppins'; border: none; color: white; border-radius: 9px; font-weight: 500;">Back</button>
+            </div>
+        </div>
+    </div>
+</body>
