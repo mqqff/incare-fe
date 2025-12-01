@@ -1,6 +1,8 @@
 // Get elements
 const searchButton = document.querySelector('.group-2');
 const backButton = document.querySelector('.group-3');
+const backButtonJadwalmdf = document.querySelector('.back-btn-mdf');
+
 const loadingModal = document.getElementById('loading-modal');
 
 // Search button click event
@@ -9,11 +11,6 @@ searchButton.addEventListener('click', function() {
   setTimeout(function() {
     loadingModal.style.display = 'none';
   }, 3000); // Hide after 3 seconds
-});
-
-// Back button click event
-backButton.addEventListener('click', function() {
-  window.location.href = 'DashboardVolunteer.html';
 });
 
 // Star rating functionality
@@ -35,10 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // View Activities button click event
-  const viewButtons = document.querySelectorAll('.btn');
-  viewButtons.forEach(button => {
+  const viewButtonsmdf = document.querySelectorAll('.btn-mdf');
+  viewButtonsmdf.forEach(button => {
     button.addEventListener('click', function() {
       window.location.href = 'DetailActivity_madif.html';
+    });
+  });
+
+  const viewButtonsvln = document.querySelectorAll('.btn-vln');
+  viewButtonsvln.forEach(button => {
+    button.addEventListener('click', function() {
+      window.location.href = 'DetailActivity_volunteer.html';
     });
   });
 });
