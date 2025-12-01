@@ -522,7 +522,7 @@
 
             <div style="display: flex; align-items: center; gap: 217px;">
                 <div>
-                    <button class="nav-arrow">
+                    <button class="nav-arrow" id="arrow-left">
                         <svg width="88" height="88" viewBox="0 0 88 88" fill="none">
                             <path d="M53.1667 23.8335L34.8334 42.1668L53.1667 60.5001" stroke="white" stroke-width="2.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -533,7 +533,7 @@
                 <div class="date-number">21</div>
 
                 <div>
-                    <button class="nav-arrow">
+                    <button class="nav-arrow" id="arrow-right">
                         <svg width="88" height="88" viewBox="0 0 88 88" fill="none">
                             <path d="M36.6667 62.3333L55 44L36.6667 25.6666" stroke="white" stroke-width="2.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -725,6 +725,43 @@
                     }
                 });
             }
+
+            const days = ['Monday', 'Tuesday', 'Wedenesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            let currentIndex = 1;
+
+            const day = document.querySelector('.day');
+            const dateNumber = document.querySelector('.date-number');
+            const arrowLeft = document.getElementById('arrow-left');
+            const arrowRight = document.getElementById('arrow-right');
+            arrowLeft.addEventListener('click', function () {
+                dateNumber.textContent = parseInt(dateNumber.textContent) - 1;
+                if (parseInt(dateNumber.textContent) < 1) {
+                    dateNumber.textContent = 31;
+                }
+
+                if (currentIndex == 0) {
+                    currentIndex = 6;
+                } else {
+                    currentIndex--;
+                }
+
+                day.textContent = days[currentIndex];
+            })
+
+            arrowRight.addEventListener('click', function () {
+                dateNumber.textContent = parseInt(dateNumber.textContent) + 1;
+                if (parseInt(dateNumber.textContent) > 31) {
+                    dateNumber.textContent = 1;
+                }
+
+                if (currentIndex == 6) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex++;
+                }
+
+                day.textContent = days[currentIndex];
+            })
         });
 
         function cancelRequest() {
