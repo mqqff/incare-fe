@@ -107,8 +107,9 @@
 
         .month-text {
             color: white;
-            font-size: 30px;
+            font-size: 37px;
             font-weight: 400;
+            flex: 1;
             text-align: center;
         }
 
@@ -270,161 +271,6 @@
             background-color: #4aa899;
         }
 
-        /* Sidebar Styles */
-        .sidebar {
-            position: fixed;
-            top: -100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 720px;
-            background-color: rgba(255, 255, 255, 1);
-            z-index: 1000;
-            transition: top 0.3s ease;
-            overflow-y: auto;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-            height: 100vh;
-        }
-
-        .sidebar.open {
-            top: 0;
-        }
-
-        .sidebar-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .sidebar-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .sidebar-content {
-            padding: 20px;
-        }
-
-        .sidebar .logo {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-top: 20px;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        .sidebar .logo .in {
-            color: #58BAAB;
-        }
-
-        .sidebar .logo .care {
-            color: #58BAAB;
-        }
-
-        .menu {
-            position: relative;
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        .menu-item {
-            position: relative;
-            width: 100%;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            padding-left: 60px;
-            margin-bottom: 5px;
-        }
-
-        .menu-item:hover {
-            background-color: #f5f5f5;
-            border-radius: 10px;
-        }
-
-        .menu-item span {
-            color: rgba(68, 68, 68, 1);
-            font-size: 16px;
-            font-weight: 600;
-            line-height: normal;
-        }
-
-        .menu-icon {
-            position: absolute;
-            width: 26px;
-            height: 26px;
-            left: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-        }
-
-        .icon-dashboard {
-            top: 22px;
-        }
-
-        .icon-profile {
-            top: 97px;
-        }
-
-        .icon-assistance {
-            top: 172px;
-        }
-
-        .icon-event {
-            top: 247px;
-        }
-
-        .icon-report {
-            top: 322px;
-        }
-
-        .icon-settings {
-            top: 397px;
-        }
-
-        .logout-container {
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-            border-top: 1px solid #eee;
-        }
-
-        .logout-button {
-            width: 203px;
-            height: 70px;
-            background: linear-gradient(135deg, rgba(88, 186, 171, 1), rgba(70, 150, 140, 1));
-            border-radius: 13px;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-
-        .logout-button:hover {
-            transform: scale(1.05);
-        }
-
-        .logout-button span {
-            color: rgba(255, 255, 255, 1);
-            font-size: 16px;
-            font-weight: 600;
-            text-align: center;
-            display: block;
-            line-height: 70px;
-        }
-
         /* SVG Icons */
         .svg-icon {
             display: inline-block;
@@ -433,61 +279,7 @@
 </head>
 
 <body>
-    <!-- Main Content -->
-    <div class="container" id="mainContainer">
-        <!-- Sidebar Overlay -->
-        <div class="sidebar-overlay" id="sidebarOverlay"></div>
-
-        <!-- Sidebar -->
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-content">
-                <!-- Logo -->
-                <div class="logo">
-                    <span class="in">IN</span><span class="care">CARE</span>
-                </div>
-                <!-- Menu Container -->
-                <div class="menu">
-                    <!-- Dashboard -->
-                    <div class="menu-item dashboard">
-                        <span onclick="window.location.href = 'DashboardVolunteer.html'">Dashboard</span>
-                    </div>
-                    <img src="./assest/garden_home-fill-16.png" class="menu-icon icon-dashboard" />
-                    <!-- Profile -->
-                    <div class="menu-item profile">
-                        <span>Profile</span>
-                    </div>
-                    <img src="./assest/iconamoon_profile-fill.png" class="menu-icon icon-profile">
-                    <!-- Assistance -->
-                    <div class="menu-item assistance">
-                        <span onclick="window.location.reload()">Assistance</span>
-                    </div>
-                    <img src="./assest/fluent_handshake-32-filled.png" class="menu-icon icon-assistance">
-                    <!-- Event -->
-                    <div class="menu-item event">
-                        <span>Event</span>
-                    </div>
-                    <img src="./assest/tabler_calendar-filled.png" class="menu-icon icon-event">
-                    <!-- Report -->
-                    <div class="menu-item report">
-                        <span>Report</span>
-                    </div>
-                    <img src="./assest/icon-park-solid_table-report.png" class="menu-icon icon-report">
-                    <!-- Settings -->
-                    <div class="menu-item settings">
-                        <span>Settings</span>
-                    </div>
-                    <img src="./assest/solar_settings-bold.png" class="menu-icon icon-settings">
-                </div>
-
-                <!-- Logout Button -->
-                <div class="logout-container">
-                    <button class="logout-button">
-                        <span>Logout</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
+    <div class="container">
         <!-- Navbar -->
         <div style="background: #57BAAB;">
             <nav class="navbar"
@@ -503,7 +295,7 @@
                                 fill="#828282" />
                         </svg>
                     </button>
-                    <button class="icon-btn" id="menuToggle">
+                    <button class="icon-btn">
                         <svg width="40" height="27" viewBox="0 0 40 27" fill="none">
                             <path
                                 d="M1.25002 27C0.895016 27 0.59835 26.8762 0.360017 26.6285C0.121684 26.3809 0.00168379 26.076 1.71233e-05 25.7139C-0.00164954 25.3518 0.118351 25.0478 0.360017 24.8019C0.601683 24.5559 0.89835 24.4338 1.25002 24.4355H38.75C39.105 24.4355 39.4017 24.5585 39.64 24.8044C39.88 25.0504 40 25.3553 40 25.719C40 26.0828 39.88 26.3868 39.64 26.6311C39.4 26.8753 39.1033 26.9974 38.75 26.9974L1.25002 27ZM1.25002 14.7797C0.895016 14.7797 0.59835 14.6567 0.360017 14.4108C0.121684 14.1648 0.00168379 13.8599 1.71233e-05 13.4962C-0.00164954 13.1324 0.118351 12.8284 0.360017 12.5841C0.601683 12.3399 0.89835 12.2178 1.25002 12.2178H38.75C39.105 12.2178 39.4017 12.3407 39.64 12.5867C39.8783 12.8326 39.9983 13.1375 40 13.5013C40.0017 13.8651 39.8817 14.1691 39.64 14.4133C39.3983 14.6576 39.1017 14.7797 38.75 14.7797H1.25002ZM1.25002 2.55935C0.895016 2.55935 0.59835 2.43723 0.360017 2.193C0.120017 1.94705 1.71233e-05 1.64219 1.71233e-05 1.27839C1.71233e-05 0.914603 0.120017 0.610059 0.360017 0.366354C0.600017 0.122118 0.896683 0 1.25002 0H38.75C39.105 0 39.4017 0.122972 39.64 0.368916C39.8783 0.614859 39.9983 0.918019 40 1.27839C40.0017 1.63877 39.8817 1.94278 39.64 2.19044C39.3983 2.43809 39.1017 2.56106 38.75 2.55935H1.25002Z"
@@ -545,9 +337,9 @@
 
         <!-- Calendar Bar -->
         <div class="calendar-bar" style="background-color: #2EAE9B;">
-            <img style="cursor: pointer;" src="./assest/icons8_plus.png" width="70">
+            <div style="width: 60px;"></div>
             <div class="month-text">OCTOBER 2025</div>
-            <img style="cursor: pointer;" src="./assest/icon-park-solid_calendar.png" width="70">
+            <img src="./assest/icon-park-solid_calendar.png" width="40">
         </div>
 
         <!-- Timeline Line -->
@@ -567,24 +359,24 @@
 
                 <div class="schedule-details">
                     <div class="detail-item">
-                        <img src="./assest/location.png" width="25">
+                        <img src="./assest/tdesign_location.png" width="25">
                         <span>FILKOM Ruang G1.6</span>
                     </div>
 
                     <div class="detail-item">
-                        <img src="./assest/clock.png" width="23">
+                        <img src="./assest/mdi_clock-outline.png" width="23">
                         <span>08:45 PM - 10:30 PM</span>
                     </div>
                 </div>
 
                 <div class="schedule-details">
                     <div class="detail-item" style="margin-left: 4px;">
-                        <img src="./assest/user.png" width="23">
+                        <img src="./assest/icon-park-outline_people.png" width="23">
                         <span>Andi Sutarno</span>
                     </div>
 
                     <div class="detail-item" style="margin-left: -1px;">
-                        <img src="./assest/accessibility.svg" width="25">
+                        <img src="./assest/solar_accessibility-outline.png" width="25">
                         <span>Tunawicara</span>
                     </div>
                 </div>
@@ -605,31 +397,31 @@
 
                 <div class="schedule-details">
                     <div class="detail-item">
-                        <img src="./assest/location.png" width="25">
+                        <img src="./assest/tdesign_location.png" width="25">
                         <span>FILKOM Ruang F4.4</span>
                     </div>
 
                     <div class="detail-item">
-                        <img src="./assest/clock.png" width="23">
+                        <img src="./assest/mdi_clock-outline.png" width="23">
                         <span>12:30 PM - 14:10 PM</span>
                     </div>
                 </div>
 
                 <div class="schedule-details">
                     <div class="detail-item" style="margin-left: 4px;">
-                        <img src="./assest/user.png" width="23">
+                        <img src="./assest/icon-park-outline_people.png" width="23">
                         <span>Budiman Santoso</span>
                     </div>
 
                     <div class="detail-item" style="margin-left: -1px;">
-                        <img src="./assest/accessibility.svg" width="25">
+                        <img src="./assest/solar_accessibility-outline.png" width="25">
                         <span>Tunadaksa</span>
                     </div>
                 </div>
 
                 <div class="schedule-details" style="width: 55rem;">
                     <div class="detail-item" style="margin-left: 4px;">
-                        <img src="./assest/sticky-note.png" width="23">
+                        <img src="./assest/ph_note.png" width="23">
                         <span>Perlu ambil kursi roda di PLD UB terlebih dahulu</span>
                     </div>
                 </div>
@@ -650,24 +442,24 @@
 
                 <div class="schedule-details">
                     <div class="detail-item">
-                        <img src="./assest/location.png" width="25">
+                        <img src="./assest/tdesign_location.png" width="25">
                         <span>FILKOM Ruang F3.7</span>
                     </div>
 
                     <div class="detail-item">
-                        <img src="./assest/clock.png" width="23">
+                        <img src="./assest/mdi_clock-outline.png" width="23">
                         <span>15:20 PM - 17:00 PM</span>
                     </div>
                 </div>
 
                 <div class="schedule-details">
                     <div class="detail-item" style="margin-left: 4px;">
-                        <img src="./assest/user.png" width="23">
+                        <img src="./assest/icon-park-outline_people.png" width="23">
                         <span>Agus Susilo</span>
                     </div>
 
                     <div class="detail-item" style="margin-left: -1px;">
-                        <img src="./assest/accessibility.svg" width="25">
+                        <img src="./assest/solar_accessibility-outline.png" width="25">
                         <span>Tunarungu, tunawicara</span>
                     </div>
                 </div>
@@ -683,52 +475,13 @@
 
         <div style="display: flex; justify-content: space-between; padding-bottom: 30px;">
             <div style="cursor: pointer;">
-                <img src="./assest/Accessibility Icon.png" width="60px" style="margin-left: 75px;">
+                <img src="assest/Accessibility-Icon.png" width="60px" style="margin-left: 75px;">
             </div>
-            <div style="margin-right: 40px;">
-                <button
-                    style="cursor: pointer; background-color: #58BAAB; width: 155px; height: 60px; font-size: 20px; font-family: 'Poppins'; border: none; color: white; border-radius: 9px; font-weight: 500;"
-                    onclick="window.location.href = 'DashboardVolunteer.html'">Back</button>
+            <div  style="margin-right: 40px;">
+                <button class="back-btn-vln" onclick="window.location.href='DashboardVolunteer.html'"
+                    style="cursor: pointer; background-color: #58BAAB; width: 155px; height: 60px; font-size: 20px; font-family: 'Poppins'; border: none; color: white; border-radius: 9px; font-weight: 500;">Back</button>
             </div>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menuToggle');
-            const sidebar = document.getElementById('sidebar');
-            const sidebarOverlay = document.getElementById('sidebarOverlay');
-
-            menuToggle.addEventListener('click', function () {
-                sidebar.classList.toggle('open');
-                sidebarOverlay.classList.toggle('active');
-            });
-
-            sidebarOverlay.addEventListener('click', function () {
-                sidebar.classList.remove('open');
-                sidebarOverlay.classList.remove('active');
-            });
-
-            const menuItems = document.querySelectorAll('.menu-item');
-            menuItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    sidebar.classList.remove('open');
-                    sidebarOverlay.classList.remove('active');
-
-                    const menuText = this.querySelector('a').textContent;
-                });
-            });
-
-            const logoutButton = document.querySelector('.logout-button');
-            if (logoutButton) {
-                logoutButton.addEventListener('click', function () {
-                    if (confirm('Are you sure want to logout?')) {
-                        window.location.href = "Login.html";
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="script/script.js"></script>
 </body>
-
-</html>
