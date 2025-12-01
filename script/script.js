@@ -13,7 +13,7 @@ searchButton.addEventListener('click', function() {
 
 // Back button click event
 backButton.addEventListener('click', function() {
-  window.location.href = 'beranda.html';
+  window.location.href = 'DashboardVolunteer.html';
 });
 
 // Star rating functionality
