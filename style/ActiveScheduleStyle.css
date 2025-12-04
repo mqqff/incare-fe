@@ -1,0 +1,422 @@
+at.manajemen-jadwal {
+  max-width: 720px;
+  margin: 20px auto;
+  height: 1350px;
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  overflow: visible;
+}
+
+/* ================= USERS CARD ================= */
+
+.manajemen-jadwal .users-card {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 722px;
+  height: 385px;
+  box-shadow: 0px 0px 4px #0000000d;
+}
+
+.manajemen-jadwal .mask-group {
+  position: absolute;
+  top: 265px;
+  left: 83px;
+  width: 80px;
+  height: 82px;
+}
+
+.manajemen-jadwal .text-wrapper {
+  position: absolute;
+  top: 287px;
+  left: 516px;
+  width: 98px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.manajemen-jadwal .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720px;
+  height: 385px;
+  background-color: #58baab;
+}
+
+.manajemen-jadwal .img {
+  position: absolute;
+  top: 398px;
+  left: 31px;
+  width: 648px;
+  height: 850px;
+}
+
+.manajemen-jadwal .div {
+  position: absolute;
+  top: 340px;
+  left: 61px;
+  width: 284px;
+  height: 35px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* ================= KOTAK 1 ================= */
+
+.manajemen-jadwal .rectangle-2 {
+  position: absolute;
+  top: 448px;
+  left: 61px;
+  width: 590px;
+  height: 139px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.manajemen-jadwal .text-wrapper-2 {
+  position: absolute;
+  top: 471px;
+  left: 83px;
+  width: 359px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 28px;
+}
+
+.manajemen-jadwal .p {
+  position: absolute;
+  top: 533px;
+  left: 83px;
+  width: 244px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 24px;
+}
+
+.manajemen-jadwal .group {
+  position: absolute;
+  top: 491px;
+  left: 465px;
+  width: 142px;
+  height: 54px;
+  display: flex;
+  gap: 38px;
+}
+
+.manajemen-jadwal .rectangle-3 {
+  width: 52px;
+  height: 54px;
+  background-color: #f6ba00;
+  border-radius: 9px;
+}
+
+.manajemen-jadwal .rectangle-4 {
+  display: none;
+}
+
+.manajemen-jadwal .edit {
+  position: absolute;
+  top: 491px;
+  left: 469px;
+  width: 48px;
+  height: 48px;
+}
+
+.manajemen-jadwal .edit-button {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.manajemen-jadwal .edit-button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.manajemen-jadwal .delete-button {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.manajemen-jadwal .delete-button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.manajemen-jadwal .rectangle-delete {
+  width: 52px;
+  height: 54px;
+  background-color: #cccccc;
+  border-radius: 9px;
+}
+
+
+
+/* ================= KOTAK 2 ================= */
+
+.manajemen-jadwal .group-2 {
+  position: absolute;
+  top: 614px;
+  left: 61px;
+  width: 594px;
+  height: 139px;
+}
+
+.manajemen-jadwal .rectangle-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 590px;
+  height: 139px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.manajemen-jadwal .text-wrapper-3 {
+  position: absolute;
+  top: 23px;
+  left: 22px;
+  width: 359px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 28px;
+}
+
+.manajemen-jadwal .text-wrapper-4 {
+  position: absolute;
+  top: 85px;
+  left: 22px;
+  width: 236px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 24px;
+}
+
+.manajemen-jadwal .group-3 {
+  position: absolute;
+  top: 46px;
+  left: 404px;
+  width: 142px;
+  height: 54px;
+  display: flex;
+  gap: 38px;
+}
+
+.manajemen-jadwal .edit-2 {
+  position: absolute;
+  top: 46px;
+  left: 408px;
+  width: 48px;
+  height: 48px;
+}
+
+
+
+/* ================= KOTAK 3 ================= */
+
+.manajemen-jadwal .group-4 {
+  position: absolute;
+  top: 780px;
+  left: 61px;
+  width: 594px;
+  height: 139px;
+}
+
+.manajemen-jadwal .text-wrapper-5 {
+  position: absolute;
+  top: 23px;
+  left: 22px;
+  width: 430px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 28px;
+}
+
+.manajemen-jadwal .text-wrapper-6 {
+  position: absolute;
+  top: 85px;
+  left: 22px;
+  width: 256px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 24px;
+}
+
+
+
+/* ================= KOTAK 4 ================= */
+
+.manajemen-jadwal .group-5 {
+  position: absolute;
+  top: 946px;
+  left: 61px;
+  width: 594px;
+  height: 139px;
+}
+
+.manajemen-jadwal .text-wrapper-7 {
+  position: absolute;
+  top: 23px;
+  left: 22px;
+  width: 363px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #444444;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+/* ================= HEADER ================= */
+
+.manajemen-jadwal .text-wrapper-8 {
+  position: absolute;
+  top: 284px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 405px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.manajemen-jadwal .icon-park-solid {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 70.5px);
+  width: 141px;
+  height: 141px;
+  aspect-ratio: 1;
+}
+
+/* ================= BUTTON ADD ================= */
+
+.manajemen-jadwal .group-6 {
+  position: absolute;
+  top: 1135px;
+  left: 305px;
+  width: 347px;
+  height: 67px;
+}
+
+.manajemen-jadwal .rectangle-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 345px;
+  height: 67px;
+  background-color: #58baab;
+  border-radius: 9px;
+}
+
+.manajemen-jadwal .text-wrapper-9 {
+  position: absolute;
+  top: 11px;
+  left: 69px;
+  width: 276px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.manajemen-jadwal .add-circle {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  width: 46px;
+  height: 46px;
+}
+
+/* ================= NAVBAR ================= */
+
+.manajemen-jadwal .navbar {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 720px;
+  height: 121px;
+}
+
+.manajemen-jadwal .navbar-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.manajemen-jadwal .group-7 {
+  position: absolute;
+  width: 4.86%;
+  height: 33.06%;
+  top: 32.23%;
+  left: 80%;
+  display: flex;
+}
+
+.manajemen-jadwal .vector {
+  flex: 1;
+  width: 35px;
+}
+
+.manajemen-jadwal .group-8 {
+  position: absolute;
+  width: 5.56%;
+  height: 27px;
+  top: calc(50% - 14px);
+  left: 89.44%;
+  aspect-ratio: 1.48;
+  background-image: url(./img/vector.svg);
+  background-size: 100% 100%;
+}
+
+.manajemen-jadwal .INCARE {
+  position: absolute;
+  top: 27px;
+  left: 52px;
+  width: 277px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 40px;
+}
+
+.manajemen-jadwal .span {
+  color: #58baab;
+}
+
+.manajemen-jadwal .text-wrapper-10 {
+  color: #818181;
+}
+
+

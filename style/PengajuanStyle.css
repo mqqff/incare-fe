@@ -1,0 +1,251 @@
+/* ========== GLOBAL ========== */
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Poppins", "Helvetica", Arial, sans-serif;
+  background: #d6d6d6; /* abu luar */
+  -webkit-font-smoothing:antialiased;
+  zoom: 120%;
+}
+
+/* Container utama (base 720px, responsive) */
+.pengajuan {
+  max-width: 720px;
+  margin: 20px auto; /* beri jarak atas agar tidak nempel */
+  min-height: calc(100vh - 40px);
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.12);
+  border-radius: 6px;
+  overflow: visible;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  width: 100%;
+  height: 121px; /* sesuai mockup */
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.navbar-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Logo / title */
+.INCARE {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  color: #222;
+}
+.INCARE .span { color: #58BAAB; } /* hijau logo */
+
+/* right-side icons */
+.group-2 { 
+  width: 28px; height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+
+.group-3 {
+  width: 28px; height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+
+/* ========== PROFILE CARD ========== */
+.text-wrapper-11 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  margin: 22px 24px 12px;
+}
+
+/* profile card outer */
+.group-4 {
+  margin: 0 24px;
+  background: transparent;
+  border-radius: 14px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: visible;
+}
+
+/* background image banner */
+.profile-card .img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* dark gradient overlay on banner */
+.rectangle-3 {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: calc(18px + 24px); /* align inside group-4 margin */
+  height: 200px;
+  border-radius: 14px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 58%, rgba(0,0,0,0.12) 100%);
+}
+
+/* avatar */
+.mask-group {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  bottom: -21px; /* overlap ke bawah */
+  left: 38px;
+  border: 3px solid #fff;
+  object-fit: cover;
+  background: #fff;
+}
+
+/* name text on banner */
+.text-wrapper-14 {
+  position: absolute;
+  bottom: 37px;
+  left: 140px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* badges */
+.group-5 {
+  position: absolute;
+  bottom: 7px;
+  left: 140px;
+  display: flex;
+  gap: 8px;
+}
+.group-6, .group-7 {
+  background: rgba(255,255,255,0.95);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.text-wrapper-12 { color:#818181; }
+.text-wrapper-13 { color:#f6ba00; }
+
+/* ========== FORM SECTION ========== */
+/* .div in your HTML is the form card — keep selector to match */
+.form-section .div {
+  background: #f9f9f9;
+  margin: 60px 24px 36px;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+/* Labels (use the label elements in HTML) */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+input[type="text"], input[type="time"], textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d7d7d7;
+  font-size: 14px;
+  background: #fff;
+  font-family: inherit;
+  outline: none;
+}
+input[type="time"] { padding: 10px 14px; }
+
+/* focus */
+input:focus, textarea:focus {
+  border-color: #58baab;
+  box-shadow: 0 0 0 4px rgba(88,186,171,0.08);
+}
+
+/* textarea */
+.div-wrapper { min-height: 90px; resize: vertical; }
+
+/* spacing */
+.form-group { margin-bottom: 18px; }
+
+/* three-column row */
+.form-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 12px;
+}
+
+/* smaller input variants (match html classes) */
+.input-2, .input-3, .input-4 {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Apply button area */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.group {
+  background: #58baab;
+  color: #fff;
+  padding: 10px 26px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* accessibility helper (screen reader only) */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border:0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 720px) {
+  .pengajuan { margin: 12px; }
+  .text-wrapper-14 { left: 120px; font-size:18px; }
+  .mask-group { left: 28px; bottom: -38px; }
+}
+@media (max-width: 480px) {
+  .form-row { grid-template-columns: 1fr; }
+  .text-wrapper-11 { margin-left: 12px; }
+  .group-4, .profile-card { margin: 0 12px; }
+}

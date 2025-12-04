@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>INCARE - Pengajuan Pendampingan</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="pengajuan">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="navbar-2">
+          <h1 class="INCARE">
+            <span class="span">IN</span>
+            <span class="text-wrapper-10">CARE</span>
+          </h1>
+
+          <nav aria-label="Main navigation">
+            <button class="group-2" aria-label="Notifications">
+              <img class="vector" src="assets/Notification.png" alt="Notifikasi" />
+            </button>
+            <button class="group-3" aria-label="Menu"></button>
+              <img class="vector" src="assets/ExtMenu.png" alt="Menu" />
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- PROFILE SECTION -->
+      <section class="group-4" aria-labelledby="profile-heading">
+        <h2 class="text-wrapper-11" id="profile-heading">Users Profile</h2>
+
+        <div class="profile-card">
+          <img class="img" src="assest/background.jpg" alt="Background profil" />
+
+          <div class="rectangle-3" aria-hidden="true"></div>
+          <div class="rectangle-4" aria-hidden="true"></div>
+
+          <img
+            class="mask-group"
+            src="assest/profile.png"
+            alt="Foto profil Rachman Fikry"
+          />
+
+          <div class="group-5">
+            <span class="group-6">
+              <span class="rectangle-5" aria-hidden="true"></span>
+              <span class="text-wrapper-12">FILKOM</span>
+            </span>
+
+            <span class="group-7">
+              <span class="rectangle-6" aria-hidden="true"></span>
+              <span class="text-wrapper-13">Madif</span>
+            </span>
+          </div>
+
+          <p class="text-wrapper-14">Rachman Fikry</p>
+        </div>
+      </section>
+
+      <!-- FORM SECTION -->
+      <section class="form-section" aria-labelledby="form-heading">
+        <div class="div">
+          <h2 id="form-heading" class="sr-only">
+            Formulir Pengajuan Pendampingan
+          </h2>
+
+          <form action="#" method="post" novalidate>
+            <!-- Name Volunteer -->
+            <div class="form-group">
+              <label for="name-volunteer" class="text-wrapper-2"
+                >Nama Volunteer</label
+              >
+              <input
+                type="text"
+                id="name-volunteer"
+                name="name-volunteer"
+                class="email-address-wrapper"
+                value="Rachman Fikry"
+                required
+              />
+            </div>
+
+            <!-- Name Requester -->
+            <div class="form-group">
+              <label for="name-requester" class="text-wrapper-2"
+                >Nama Pemohon</label
+              >
+              <input
+                type="text"
+                id="name-requester"
+                name="name-requester"
+                class="email-address-wrapper"
+                value="Rachman Fikry"
+                required
+              />
+            </div>
+
+            <!-- Lokasi -->
+            <div class="form-group">
+              <label for="location" class="text-wrapper-3">Lokasi</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                class="input"
+                value="FILKOM Ruang F4.4"
+                required
+              />
+            </div>
+
+            <!-- Jenis Pendampingan -->
+            <div class="form-group">
+              <label for="assistance-type" class="text-wrapper-4"
+                >Jenis Pendampingan</label
+              >
+              <input
+                type="text"
+                id="assistance-type"
+                name="assistance-type"
+                class="input"
+                value="Academic Assistance"
+                required
+              />
+            </div>
+
+            <!-- Row: Disabilitas - Jam Mulai - Jam Selesai -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="disability-type" class="text-wrapper-5"
+                  >Jenis Disabilitas</label
+                >
+                <input
+                  type="text"
+                  id="disability-type"
+                  name="disability-type"
+                  class="input-2"
+                  value="Tunadaksa"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="start-time" class="text-wrapper-6">Jam Mulai</label>
+                <input
+                  type="time"
+                  id="start-time"
+                  name="start-time"
+                  class="input-3"
+                  value="12:30"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="end-time" class="text-wrapper-7">Jam Selesai</label>
+                <input
+                  type="time"
+                  id="end-time"
+                  name="end-time"
+                  class="input-4"
+                  value="14:10"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Catatan Tambahan -->
+            <div class="form-group">
+              <label for="additional-notes" class="text-wrapper-8"
+                >Catatan Tambahan</label
+              >
+              <textarea
+                id="additional-notes"
+                name="additional-notes"
+                class="div-wrapper"
+                rows="4"
+              >
+Perlu ambil kursi roda di PLD UB terlebih dahulu</textarea
+              >
+            </div>
+
+            <!-- Button Apply -->
+            <div class="form-actions">
+              <button type="submit" class="group">
+                <span class="rectangle-2" aria-hidden="true"></span>
+                <span class="text-wrapper-9">Apply</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Decorations -->
+      <div class="rectangle decoration-1" aria-hidden="true"></div>
+      <div class="rectangle decoration-2" aria-hidden="true"></div>
+
+      <img
+        class="text-on-a-path"
+        src="img/text-on-a-path.svg"
+        alt=""
+        aria-hidden="true"
+      />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1266 @@
+.manajemen-jadwal {
+  width: 720px;              /* mengikuti layout pendampingan */
+  margin: 20px auto;
+  min-height: 1280px;        /* mengikuti tinggi layout sebelumnya */
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;          /* cegah elemen keluar frame */
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.12);
+}
+
+/* Perbaikan: width sebelumnya 722px */
+.manajemen-jadwal .users-card {
+  position: absolute;
+  top: 121px;
+  left: 0;
+  width: 720px; 
+  height: 385px;
+  box-shadow: 0px 0px 4px #0000000d;
+}
+
+/* Tidak diubah */
+.manajemen-jadwal .mask-group {
+  position: absolute;
+  top: 265px;
+  left: 83px;
+  width: 80px;
+  height: 82px;
+}
+
+.manajemen-jadwal .text-wrapper {
+  position: absolute;
+  top: 287px;
+  left: 516px;
+  width: 98px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720px;
+  height: 385px;
+  background-color: #58baab;
+}
+
+/* Perbaikan overflow image agar tidak keluar */
+.manajemen-jadwal .img {
+  position: absolute;
+  top: 394px;
+  left: 27px;
+  width: 648px;
+  height: 847px;
+  max-width: calc(720px - 54px); 
+}
+
+.manajemen-jadwal .div {
+  position: absolute;
+  top: 365px;
+  left: 10px;
+  width: 284px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manajemen-jadwal .text-wrapper-2 {
+  position: absolute;
+  top: 284px;
+  left: calc(50.00% - 200px);
+  width: 405px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-3 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% - 150px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .rectangle-2 {
+  position: absolute;
+  top: 434px;
+  left: 52px;
+  width: 590px;
+  height: 510px;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(88, 186, 171, 0.2) 0%,
+      rgba(88, 186, 171, 0.2) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(211, 255, 248, 1) 0%,
+      rgba(211, 255, 248, 1) 100%
+    );
+}
+
+.manajemen-jadwal .text-wrapper-4 {
+  position: absolute;
+  top: 416px;
+  left: calc(50.00% - 71px);
+  width: 142px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #160e4d;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-5 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% - 237px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff80;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-6 {
+  position: absolute;
+  top: 618px;
+  left: calc(50.00% - 237px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff80;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-7 {
+  top: 677px;
+  left: calc(50.00% - 237px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-8 {
+  top: 736px;
+  left: calc(50.00% - 237px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-9 {
+  top: 795px;
+  left: calc(50.00% - 237px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-10 {
+  top: 854px;
+  left: calc(50.00% - 237px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-11 {
+  top: 618px;
+  left: calc(50.00% - 9px);
+  width: 43px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-12 {
+  top: 677px;
+  left: calc(50.00% - 166px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .shape-set {
+  position: absolute;
+  top: 668px;
+  left: 326px;
+  width: 60px;
+  height: 60px;
+}
+
+.manajemen-jadwal .text-wrapper-13 {
+  top: 677px;
+  left: calc(50.00% - 83px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-14 {
+  top: 677px;
+  left: calc(50.00% - 13px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-15 {
+  top: 734px;
+  left: calc(50.00% - 12px);
+  width: 47px;
+  color: #160e4d;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-16 {
+  top: 677px;
+  left: calc(50.00% + 55px);
+  width: 47px;
+  color: #160e4d;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-17 {
+  top: 734px;
+  left: calc(50.00% + 53px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-18 {
+  top: 677px;
+  left: calc(50.00% + 118px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-19 {
+  top: 736px;
+  left: calc(50.00% + 118px);
+  width: 47px;
+  color: #160e4d;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-20 {
+  top: 736px;
+  left: calc(50.00% - 166px);
+  width: 47px;
+  color: #160e4d;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-21 {
+  top: 736px;
+  left: calc(50.00% - 87px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-22 {
+  top: 795px;
+  left: calc(50.00% - 87px);
+  width: 47px;
+  color: #160e4d;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-23 {
+  top: 795px;
+  left: calc(50.00% - 13px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-24 {
+  top: 795px;
+  left: calc(50.00% + 51px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-25 {
+  top: 795px;
+  left: calc(50.00% + 115px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-26 {
+  top: 854px;
+  left: calc(50.00% + 118px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-27 {
+  top: 854px;
+  left: calc(50.00% + 53px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-28 {
+  top: 854px;
+  left: calc(50.00% - 90px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-29 {
+  top: 854px;
+  left: calc(50.00% - 13px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-30 {
+  top: 795px;
+  left: calc(50.00% - 166px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-31 {
+  top: 854px;
+  left: calc(50.00% - 165px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-32 {
+  top: 618px;
+  left: calc(50.00% - 166px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-33 {
+  top: 618px;
+  left: calc(50.00% - 95px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-34 {
+  top: 618px;
+  left: calc(50.00% + 56px);
+  width: 47px;
+  color: #ffffff;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .element {
+  position: absolute;
+  top: 618px;
+  left: calc(50.00% + 124px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #160e4d;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-35 {
+  top: 618px;
+  left: calc(50.00% + 183px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-36 {
+  top: 677px;
+  left: calc(50.00% + 183px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-37 {
+  top: 736px;
+  left: calc(50.00% + 183px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-38 {
+  top: 795px;
+  left: calc(50.00% + 183px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-39 {
+  top: 854px;
+  left: calc(50.00% + 192px);
+  width: 47px;
+  color: #ffffff80;
+  position: absolute;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-40 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% - 166px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-41 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% - 95px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-42 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% - 24px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-43 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% + 47px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-44 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% + 118px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-45 {
+  position: absolute;
+  top: 559px;
+  left: calc(50.00% + 176px);
+  width: 47px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff80;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-46 {
+  position: absolute;
+  top: 458px;
+  left: calc(50.00% - 285px);
+  width: 176px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #160e4d80;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-47 {
+  position: absolute;
+  top: 455px;
+  left: calc(50.00% + 129px);
+  width: 134px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #160e4d80;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .icon-park-solid {
+  position: absolute;
+  top: 50px;
+  left: 297px;
+  width: 141px;
+  height: 141px;
+  aspect-ratio: 1;
+}
+
+.manajemen-jadwal .group {
+  position: absolute;
+  top: 464px;
+  left: 441px;
+  width: 19px;
+  height: 19px;
+  background-color: #160e4d;
+  border-radius: 9.33px;
+}
+
+.manajemen-jadwal .group-2 {
+  position: absolute;
+  top: 464px;
+  left: 241px;
+  width: 19px;
+  height: 19px;
+  background-color: #160e4d;
+  border-radius: 9.33px;
+}
+
+.manajemen-jadwal .group-3 {
+  position: absolute;
+  width: 30.83%;
+  height: 4.50%;
+  top: 78.83%;
+  left: 10.42%;
+}
+
+.manajemen-jadwal .rectangle-3 {
+  position: absolute;
+  width: 99.10%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #a4a4a4;
+}
+
+.manajemen-jadwal .text-wrapper-48 {
+  position: absolute;
+  width: 99.10%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #818181;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .group-4 {
+  position: absolute;
+  width: 30.83%;
+  height: 4.50%;
+  top: 78.83%;
+  left: 55.69%;
+}
+
+.manajemen-jadwal .text-wrapper-49 {
+  position: absolute;
+  top: 977px;
+  left: 75px;
+  width: 120px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #525252;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .text-wrapper-50 {
+  position: absolute;
+  top: 977px;
+  left: 401px;
+  width: 120px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #525252;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .group-5 {
+  position: absolute;
+  top: 1143px;
+  left: 426px;
+  width: 318px;
+  height: 67px;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .group-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 165px;
+  height: 67px;
+  background-color: #58baab;
+  border-radius: 9px;
+}
+
+.manajemen-jadwal .text-wrapper-51 {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 93px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.manajemen-jadwal .group-7 {
+  position: absolute;
+  top: 1139px;
+  left: 100px;
+  width: 299px;
+  height: 67px;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .group-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 165px;
+  height: 67px;
+  background-color: #ff3a3a;
+  border-radius: 9px;
+}
+
+.manajemen-jadwal .text-wrapper-52 {
+  position: absolute;
+  top: 15px;
+  left: 27px;
+  width: 106px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
+}
+
+.manajemen-jadwal .navbar {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 720px;
+  height: 121px;
+}
+
+.manajemen-jadwal .navbar-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+}
+
+.manajemen-jadwal .group-9 {
+  position: absolute;
+  width: 4.86%;
+  height: 33.06%;
+  top: 32.23%;
+  left: 80.00%;
+  display: flex;
+}
+
+.manajemen-jadwal .vector {
+  flex: 1;
+  width: 35px;
+}
+
+.manajemen-jadwal .group-10 {
+  position: absolute;
+  width: 5.56%;
+  top: calc(50.00% - 14px);
+  left: 89.44%;
+  height: 27px;
+  aspect-ratio: 1.48;
+  background-size: 100% 100%;
+}
+
+.manajemen-jadwal .INCARE {
+  position: absolute;
+  top: 27px;
+  left: 52px;
+  width: 277px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.INCARE {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  color: #222;
+}
+
+.manajemen-jadwal .span {
+  color: #58baab;
+}
+
+.manajemen-jadwal .text-wrapper-53 {
+  color: #818181;
+}
+/* Inject original CSS code here */
+
+
